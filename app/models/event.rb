@@ -155,6 +155,8 @@ class Event < ApplicationRecord
     end_date.present? && end_date < Date.today
   end
 
+  def cancelled? = static_metadata.cancelled?
+
   def happening?
     start_date.present? && end_date.present? && (start_date..end_date).cover?(Date.today)
   end
@@ -223,7 +225,7 @@ class Event < ApplicationRecord
     ordered_ids = where(id: ids)
       .includes(:cfps)
       .sort_by { |event| event.featured_distance(today: today) }
-      .reject { |event| event.static_metadata.cancelled? }
+      .reject(&:cancelled?)
       .first(limit)
       .map(&:id)
 
@@ -443,7 +445,7 @@ class Event < ApplicationRecord
       event.description = description.strip
       event.location = static_metadata.location
       event.url = website
-      event.status = static_metadata.cancelled? ? "CANCELLED" : "CONFIRMED"
+      event.status = cancelled? ? "CANCELLED" : "CONFIRMED"
     end
   end
 

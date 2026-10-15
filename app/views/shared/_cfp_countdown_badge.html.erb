@@ -1,4 +1,4 @@
-<% return if event.static_metadata.cancelled? %>
+<% return if event.cancelled? %>
 
 <% event.cfps.each do |cfp| %>
   <% if cfp.future? %>
