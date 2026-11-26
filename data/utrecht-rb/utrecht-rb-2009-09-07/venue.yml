@@ -1,0 +1,24 @@
+# docs/ADDING_VENUES.md
+---
+name: "Grand Café Winkel van Sinkel"
+description: ""
+instructions: ""
+url: ""
+
+address:
+  street: "158 Oudegracht"
+  city: "Utrecht"
+  region: "Utrecht"
+  postal_code: "3511 AZ"
+  country: "Netherlands"
+  country_code: "nl"
+  display: "Oudegracht 158, Utrecht, Netherlands"
+
+coordinates:
+  latitude: 52.0919332
+  longitude: 5.1186673
+
+maps:
+  google: "https://maps.google.com/?q=Grand+Café+Winkel+van+Sinkel,52.0919332,5.1186673"
+  apple: "https://maps.apple.com/?q=Grand+Café+Winkel+van+Sinkel&ll=52.0919332,5.1186673"
+  openstreetmap: "https://www.openstreetmap.org/?mlat=52.0919332&mlon=5.1186673"

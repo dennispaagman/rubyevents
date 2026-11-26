@@ -1,0 +1,24 @@
+# docs/ADDING_VENUES.md
+---
+name: "Grand Café Carré"
+description: ""
+instructions: ""
+url: ""
+
+address:
+  street: "7 Mariaplaats"
+  city: "Utrecht"
+  region: "Utrecht"
+  postal_code: "3511 LH"
+  country: "Netherlands"
+  country_code: "nl"
+  display: "Mariaplaats 7, Utrecht, Netherlands"
+
+coordinates:
+  latitude: 52.0899138
+  longitude: 5.117736
+
+maps:
+  google: "https://maps.google.com/?q=Grand+Café+Carré,52.0899138,5.117736"
+  apple: "https://maps.apple.com/?q=Grand+Café+Carré&ll=52.0899138,5.117736"
+  openstreetmap: "https://www.openstreetmap.org/?mlat=52.0899138&mlon=5.117736"
